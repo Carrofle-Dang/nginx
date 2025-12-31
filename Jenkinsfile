@@ -13,6 +13,7 @@ pipeline {
         docker push 192.168.0.10:5000/nginx
         '''
       }
+    }
     stage('deploy kubernetes') {
       steps {
         sh '''
