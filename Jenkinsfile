@@ -9,8 +9,7 @@ pipeline {
     stage('docker build') {
       steps {
         sh '''
-        docker build -t 192.168.0.10:5000/nginx .
-        docker push 192.168.0.10:5000/nginx
+        docker push 192.168.0.10:5000/multi-img
         '''
       }
     }
